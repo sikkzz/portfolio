@@ -6,27 +6,23 @@ const HeaderDiv = styled.header`
 	left: 0;
 	width: 100%;
 	z-index: 3000;
+	background-color: rgba(116, 99, 99, 0.1);
+	backdrop-filter: blur(15px);
 `;
 
 const InnerDiv = styled.div`
+	max-width: 1180px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: rgba(116, 99, 99, 0.1);
-	backdrop-filter: blur(15px);
-	padding: 1rem;
+	padding: 1.25rem;
+	margin: 0 auto;
 `;
 
 const LogoDiv = styled.div`
 	font-size: 0.9rem;
 	text-align: center;
-	text-transform: uppercase;
 	line-height: 1;
-
-	& > h1 > a > em {
-		font-size: 10px;
-		display: block;
-	}
 `;
 
 const Nav = styled.nav<{ $show: boolean }>`
@@ -34,9 +30,8 @@ const Nav = styled.nav<{ $show: boolean }>`
 		display: inline;
 
 		a {
-			text-transform: uppercase;
-			font-size: 14px;
-			padding: 14px;
+			font-size: 20px;
+			padding: 20px;
 			position: relative;
 
 			&::before {
@@ -56,7 +51,7 @@ const Nav = styled.nav<{ $show: boolean }>`
 		}
 	}
 
-	@media screen and (max-width: 800px) {
+	/* @media screen and (max-width: 800px) {
 		display: ${({ $show }) => ($show ? "block" : "none")};
 
 		& > ul {
@@ -67,7 +62,6 @@ const Nav = styled.nav<{ $show: boolean }>`
 			background-color: rgba(116, 99, 99, 0.1);
 			backdrop-filter: blur(15px);
 			z-index: 3000;
-			/* min-width: 150px; */
 			padding: 20px 0;
 
 			& > li {
@@ -88,7 +82,7 @@ const Nav = styled.nav<{ $show: boolean }>`
 		&::after {
 			width: 20px;
 		}
-	}
+	} */
 `;
 
 const MNavDiv = styled.div`

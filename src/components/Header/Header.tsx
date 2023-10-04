@@ -15,9 +15,7 @@ const Header = () => {
 			<InnerDiv>
 				<LogoDiv>
 					<h1>
-						<a href="/">
-							portfolio<em>react.js</em>
-						</a>
+						<a href="/">Sik&apos;s Portfolio</a>
 					</h1>
 				</LogoDiv>
 				<Nav role="navigation" aria-label="메인 메뉴" $show={show}>

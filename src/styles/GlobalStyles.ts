@@ -40,7 +40,8 @@ const GlobalStyles = createGlobalStyle`${css`
 	select,
 	table,
 	textarea {
-		font-family: "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", helvetica, sans-serif;
+		font-family: "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", helvetica,
+			sans-serif;
 	}
 
 	a,

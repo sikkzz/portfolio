@@ -1,22 +1,22 @@
 export const headerTabData = [
 	{
-		title: "intro",
-		url: "#intro",
+		title: "About",
+		url: "/about",
 	},
 	{
-		title: "skill",
-		url: "#skill",
+		title: "Skills",
+		url: "/skill",
 	},
 	{
-		title: "site",
-		url: "#site",
+		title: "Projects",
+		url: "/project",
 	},
-	{
-		title: "portfolio",
-		url: "#port",
-	},
-	{
-		title: "contact",
-		url: "#contact",
-	},
+	// {
+	// 	title: "portfolio",
+	// 	url: "#port",
+	// },
+	// {
+	// 	title: "contact",
+	// 	url: "#contact",
+	// },
 ];
