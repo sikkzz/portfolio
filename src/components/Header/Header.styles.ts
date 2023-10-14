@@ -6,8 +6,8 @@ const HeaderDiv = styled.header`
 	left: 0;
 	width: 100%;
 	z-index: 3000;
-	background-color: rgba(116, 99, 99, 0.1);
-	backdrop-filter: blur(15px);
+	/* background-color: rgba(116, 99, 99, 0.1);
+	backdrop-filter: blur(15px); */
 `;
 
 const InnerDiv = styled.div`
@@ -17,6 +17,7 @@ const InnerDiv = styled.div`
 	justify-content: space-between;
 	padding: 1.25rem;
 	margin: 0 auto;
+	color: #fff;
 `;
 
 const LogoDiv = styled.div`
