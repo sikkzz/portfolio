@@ -28,7 +28,7 @@ const HeroDiv = styled.div`
 `;
 
 const ContentDiv = styled.div`
-	max-width: 1180px;
+	max-width: 1280px;
 	margin: 0 auto;
 	padding: 8.5rem 2rem 4rem;
 	text-align: center;

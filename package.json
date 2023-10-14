@@ -9,15 +9,16 @@
     "preview": "vite preview",
     "lint": "eslint './src/**/*.{ts,tsx,js,jsx}'",
     "lint:fix": "eslint --fix './src/**/*.{ts,tsx,js,jsx}'",
-		"prepare": "husky install"
-
+    "prepare": "husky install"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.25",
+    "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
+    "react-tilt": "^1.0.2",
     "styled-components": "^6.0.8",
     "vite-plugin-svgr": "^4.1.0"
   },
@@ -46,13 +47,13 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "lint-staged": {
-		"src/**/*.{js,jsx,ts,tsx}": [
-			"eslint --fix"
-		]
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	}
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
