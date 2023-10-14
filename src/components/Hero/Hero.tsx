@@ -1,16 +1,16 @@
 import {
-	AboutSection,
-	AboutDiv,
+	HeroSection,
+	HeroDiv,
 	ContentDiv,
 	ContentTitleDiv,
 	ContentDescriptionDiv,
 	ContentButtonDiv,
-} from "./About.styles";
+} from "./Hero.styles";
 
-const About = () => {
+const Hero = () => {
 	return (
-		<AboutSection>
-			<AboutDiv>
+		<HeroSection>
+			<HeroDiv>
 				<ContentDiv>
 					<ContentTitleDiv>
 						- 김준식 -<br />웹 개발자 포트폴리오
@@ -24,9 +24,9 @@ const About = () => {
 					</ContentDescriptionDiv>
 					<ContentButtonDiv>더 알아보기 ↓</ContentButtonDiv>
 				</ContentDiv>
-			</AboutDiv>
-		</AboutSection>
+			</HeroDiv>
+		</HeroSection>
 	);
 };
 
-export default About;
+export default Hero;

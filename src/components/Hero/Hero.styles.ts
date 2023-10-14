@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 import BioImg from "@/assets/background.jpg";
 
-const AboutSection = styled.section``;
+const HeroSection = styled.section``;
 
-const AboutDiv = styled.div`
+const HeroDiv = styled.div`
 	position: relative;
 
 	&::before {
@@ -14,13 +14,14 @@ const AboutDiv = styled.div`
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background:
+		/* background:
 			linear-gradient(
 				180deg,
 				rgba(112, 93, 80, 0.8) 0,
 				rgba(112, 93, 80, 0.8) 90%
 			),
-			url(${BioImg}) 50% no-repeat;
+			url(${BioImg}) 50% no-repeat; */
+		background-color: #050816;
 		background-size: cover;
 		z-index: -1;
 	}
@@ -73,8 +74,8 @@ const ContentButtonDiv = styled.div`
 `;
 
 export {
-	AboutSection,
-	AboutDiv,
+	HeroSection,
+	HeroDiv,
 	ContentDiv,
 	ContentTitleDiv,
 	ContentDescriptionDiv,
