@@ -19,7 +19,6 @@ const HeroDiv = styled.div`
 	padding: 0 4rem;
 	gap: 1.25rem;
 	display: flex;
-	align-items: flex-start;
 	max-width: 80rem;
 	margin: 0 auto;
 	position: absolute;
@@ -30,8 +29,13 @@ const HeroDiv = styled.div`
 `;
 
 const HeroTextDiv = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 100px;
+
 	& > h1 {
-		font-size: 80px;
+		font-size: 60px;
 		line-height: 98px;
 		color: #fff;
 		font-weight: 900;
@@ -51,58 +55,24 @@ const HeroTextDiv = styled.div`
 	}
 `;
 
-const ContentDiv = styled.div`
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 8.5rem 2rem 4rem;
-	text-align: center;
-
-	& > hr {
-		width: 3.25rem;
-		margin: 1.5rem auto;
-		border: none;
-		border-top: 0.2rem solid #f4623a;
-	}
+const HeroMoreDiv = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	bottom: 2.5rem;
 `;
 
-const ContentTitleDiv = styled.div`
-	font-family:
-		Black Han Sans,
-		sans-serif;
-	font-weight: 400;
-	font-size: 4rem;
-	color: #fff;
-	word-break: keep-all;
+const HeroMoreInnerDiv = styled.div`
+	padding: 0.5rem;
+	border: 4px solid rgb(170, 166, 195);
+	border-radius: 1.5rem;
+	width: 35px;
+	height: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 `;
 
-const ContentDescriptionDiv = styled.div`
-	margin: 0 auto 2rem;
-	font-weight: 400;
-	font-size: 1.25rem;
-	color: hsla(0, 0%, 100%, 0.75);
-	line-height: 1.5;
-`;
-
-const ContentButtonDiv = styled.div`
-	display: inline-block;
-	padding: 1rem 2rem;
-	border: none;
-	border-radius: 10rem;
-	background-color: #f4623a;
-	font-weight: 400;
-	font-size: 1rem;
-	text-decoration: none;
-	color: #fff;
-	line-height: 1.5;
-	cursor: pointer;
-`;
-
-export {
-	HeroSection,
-	HeroDiv,
-	HeroTextDiv,
-	ContentDiv,
-	ContentTitleDiv,
-	ContentDescriptionDiv,
-	ContentButtonDiv,
-};
+export { HeroSection, HeroDiv, HeroTextDiv, HeroMoreDiv, HeroMoreInnerDiv };

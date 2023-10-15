@@ -44,3 +44,15 @@ export const fadeIn = ({ direction, type, delay, duration }: fadeInData) => {
 		},
 	};
 };
+
+// export const staggerContainer = ({staggerChildren, delayChildren}: ) => {
+// 	return {
+// 		hidden: {},
+// 		show: {
+// 			trasition: {
+// 				staggerChildren,
+// 				delayChildren: delayChildren || 0,
+// 			},
+// 		},
+// 	};
+// };

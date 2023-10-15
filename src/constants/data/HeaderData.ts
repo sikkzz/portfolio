@@ -1,15 +1,15 @@
 export const headerTabData = [
 	{
+		id: "about",
 		title: "About",
-		url: "/about",
 	},
 	{
-		title: "Skills",
-		url: "/skill",
+		id: "work",
+		title: "Work",
 	},
 	{
-		title: "Projects",
-		url: "/project",
+		id: "contact",
+		title: "Contact",
 	},
 	// {
 	// 	title: "portfolio",

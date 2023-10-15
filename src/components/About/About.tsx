@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 import { textVariant, fadeIn } from "@/utils/motion";
 
+import SectionWrapper from "@/hoc/SectionWrapper";
+
 import {
 	AboutSection,
 	AboutDiv,
@@ -50,4 +52,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default SectionWrapper(About, "about");

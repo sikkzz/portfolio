@@ -1,11 +1,10 @@
+import { motion } from "framer-motion";
 import {
 	HeroSection,
 	HeroDiv,
 	HeroTextDiv,
-	// ContentDiv,
-	// ContentTitleDiv,
-	// ContentDescriptionDiv,
-	// ContentButtonDiv,
+	HeroMoreDiv,
+	HeroMoreInnerDiv,
 } from "./Hero.styles";
 
 const Hero = () => {
@@ -14,27 +13,37 @@ const Hero = () => {
 			<HeroDiv>
 				<HeroTextDiv>
 					<h1>
-						Hi, I&apos;m&nbsp;<span>Sik</span>
+						안녕하세요
+						<br />
+						프론트엔드 개발자 <span>김준식</span>입니다
 					</h1>
 					<p>
-						I&apos;m front-end developer sik
-						<br />I hope to develop with communication and cooperation
+						&quot;No&quot;가 아닌 &quot;Why&quot;를 얘기할 수 있는 개발자가 되고
+						싶습니다.
 					</p>
 				</HeroTextDiv>
-				{/* <ContentDiv>
-					<ContentTitleDiv>
-						- 김준식 -<br />웹 개발자 포트폴리오
-					</ContentTitleDiv>
-					<hr />
-					<ContentDescriptionDiv>
-						안녕하세요.
-						<br />
-						소통하고 협력하는 웹 개발자입니다.
-						<br />
-					</ContentDescriptionDiv>
-					<ContentButtonDiv>더 알아보기 ↓</ContentButtonDiv>
-				</ContentDiv> */}
 			</HeroDiv>
+			<HeroMoreDiv>
+				<a href="#about">
+					<HeroMoreInnerDiv>
+						<motion.div
+							animate={{ y: [0, 24, 0] }}
+							transition={{
+								duration: 1.5,
+								repeat: Infinity,
+								repeatType: "loop",
+							}}
+							style={{
+								width: "0.75rem",
+								height: "0.75rem",
+								backgroundColor: "rgb(170, 165, 195)",
+								borderRadius: "100%",
+								marginBottom: "0.25rem",
+							}}
+						/>
+					</HeroMoreInnerDiv>
+				</a>
+			</HeroMoreDiv>
 		</HeroSection>
 	);
 };
