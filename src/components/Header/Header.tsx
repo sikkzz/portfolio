@@ -22,7 +22,7 @@ const Header = () => {
 					<ul>
 						{headerTabData.map((nav) => (
 							<li key={nav.title}>
-								<a href={nav.url}>{nav.title}</a>
+								<a href={`#${nav.id}`}>{nav.title}</a>
 							</li>
 						))}
 					</ul>

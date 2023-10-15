@@ -11,7 +11,7 @@ const HeaderDiv = styled.header`
 `;
 
 const InnerDiv = styled.div`
-	max-width: 1180px;
+	max-width: 1280px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

@@ -1,13 +1,15 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import LandingPage from "@/pages/LandingPage";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
 
 const App = () => {
 	return (
 		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<LandingPage />} />
-			</Routes>
+			<Header />
+			<Hero />
+			<About />
 		</BrowserRouter>
 	);
 };
