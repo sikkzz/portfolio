@@ -9,9 +9,10 @@ interface AboutCardData {
 	index: number;
 	title: string;
 	icon: string;
+	link: string;
 }
 
-const AboutCard = ({ index, title, icon }: AboutCardData) => {
+const AboutCard = ({ index, title, icon, link }: AboutCardData) => {
 	const fadeInData = {
 		direction: "right",
 		type: "spring",
@@ -32,10 +33,12 @@ const AboutCard = ({ index, title, icon }: AboutCardData) => {
 					width: "100%",
 				}}
 			>
-				<AboutCardDiv>
-					<img src={icon} alt="web-development" />
-					<h3>{title}</h3>
-				</AboutCardDiv>
+				<a href={link}>
+					<AboutCardDiv>
+						<img src={icon} alt="web-development" />
+						<h3>{title}</h3>
+					</AboutCardDiv>
+				</a>
 			</motion.div>
 		</Tilt>
 	);

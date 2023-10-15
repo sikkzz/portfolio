@@ -9,7 +9,6 @@ const AboutCardDiv = styled.div`
 	flex-direction: column;
 	display: flex;
 	min-height: 280px;
-
 	& > img {
 		width: 4rem;
 		height: 4rem;

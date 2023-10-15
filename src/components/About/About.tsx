@@ -30,16 +30,16 @@ const About = () => {
 			<AboutDiv>
 				<motion.div variants={textVariant()}>
 					<AboutH3>Introduction</AboutH3>
-					<AboutH2>Overview.</AboutH2>
+					<AboutH2>About me</AboutH2>
 				</motion.div>
 				<AboutDescriptionDiv>
 					<motion.p variants={fadeIn(fadeInData)}>
-						I&apos;m a skilled software developer with experience in TypeScript
-						and JavaScript, and expertise in frameworks like React, Node.js, and
-						Three.js. I&apos;m a quick learner and collaborate closely with
-						clients to create efficient, scalable, and user-friendly solutions
-						that solve real-world problems. Let&apos;s work together to bring
-						your ideas to life!
+						안녕하세요 프론트엔드 개발자 김준식입니다. 순수 컴퓨터가 좋아서
+						코딩을 처음 접했고 이후 흥미를 느껴서 개발자를 꿈꾸게 되었습니다.
+						<br />
+						사람들과 소통하고 협력할 수 있는 개발자의 모습을 목표로 두고
+						최종적으로 많은 사람들이 편하게 사용할 수 있는 서비스를 구축하고
+						싶습니다.
 					</motion.p>
 					<AboutCardDiv>
 						{aboutCardData.map((data, index) => (
