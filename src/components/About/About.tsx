@@ -22,6 +22,7 @@ const About = () => {
 		delay: 0.1,
 		duration: 1,
 	};
+
 	return (
 		<AboutSection>
 			<AboutDiv>

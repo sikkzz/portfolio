@@ -1,29 +1,53 @@
 import styled from "styled-components";
 
-import BioImg from "@/assets/background.jpg";
+import HeroImg from "@/assets/background5.jpg";
 
-const HeroSection = styled.section``;
+const HeroSection = styled.section`
+	width: 100%;
+	height: 100vh;
+	margin: 0 auto;
+	position: relative;
+	background-color: #050816;
+	background-image: url(${HeroImg});
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: "Poppins", sans-serif;
+`;
 
 const HeroDiv = styled.div`
-	position: relative;
+	padding: 0 4rem;
+	gap: 1.25rem;
+	display: flex;
+	align-items: flex-start;
+	max-width: 80rem;
+	margin: 0 auto;
+	position: absolute;
+	top: 120px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+`;
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		/* background:
-			linear-gradient(
-				180deg,
-				rgba(112, 93, 80, 0.8) 0,
-				rgba(112, 93, 80, 0.8) 90%
-			),
-			url(${BioImg}) 50% no-repeat; */
-		background-color: #050816;
-		background-size: cover;
-		z-index: -1;
+const HeroTextDiv = styled.div`
+	& > h1 {
+		font-size: 80px;
+		line-height: 98px;
+		color: #fff;
+		font-weight: 900;
+		margin-top: 0.5rem;
+
+		& > span {
+			color: rgb(145, 94, 255);
+		}
+	}
+
+	& > p {
+		font-size: 40px;
+		line-height: 50px;
+		color: rgb(243, 243, 243);
+		font-weight: 500;
+		margin-top: 0.5rem;
 	}
 `;
 
@@ -76,6 +100,7 @@ const ContentButtonDiv = styled.div`
 export {
 	HeroSection,
 	HeroDiv,
+	HeroTextDiv,
 	ContentDiv,
 	ContentTitleDiv,
 	ContentDescriptionDiv,
