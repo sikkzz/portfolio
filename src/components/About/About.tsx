@@ -5,8 +5,8 @@ import { textVariant, fadeIn } from "@/utils/motion";
 import SectionWrapper from "@/hoc/SectionWrapper";
 
 import {
-	AboutSection,
 	AboutDiv,
+	AboutInnerDiv,
 	AboutH3,
 	AboutH2,
 	AboutDescriptionDiv,
@@ -26,8 +26,8 @@ const About = () => {
 	};
 
 	return (
-		<AboutSection>
-			<AboutDiv>
+		<AboutDiv>
+			<AboutInnerDiv>
 				<motion.div variants={textVariant()}>
 					<AboutH3>Introduction</AboutH3>
 					<AboutH2>About me</AboutH2>
@@ -47,8 +47,8 @@ const About = () => {
 						))}
 					</AboutCardDiv>
 				</AboutDescriptionDiv>
-			</AboutDiv>
-		</AboutSection>
+			</AboutInnerDiv>
+		</AboutDiv>
 	);
 };
 

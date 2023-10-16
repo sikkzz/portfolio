@@ -1,10 +1,12 @@
 import { styled } from "styled-components";
 
-const AboutSection = styled.section`
+const AboutDiv = styled.section`
 	background-color: #050816;
+	padding-top: 100px;
+	padding-bottom: 100px;
 `;
 
-const AboutDiv = styled.div`
+const AboutInnerDiv = styled.div`
 	max-width: 1280px;
 	margin: 0 auto;
 	padding: 2rem;
@@ -38,8 +40,8 @@ const AboutCardDiv = styled.div`
 `;
 
 export {
-	AboutSection,
 	AboutDiv,
+	AboutInnerDiv,
 	AboutH3,
 	AboutH2,
 	AboutDescriptionDiv,
