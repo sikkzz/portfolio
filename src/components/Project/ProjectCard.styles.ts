@@ -54,6 +54,7 @@ const ProjectTimelineUl = styled.ul`
 		letter-spacing: 0.05em;
 		font-size: 14px;
 		padding-left: 0.25rem;
+		margin-top: 0.5rem;
 	}
 
 	& > img {
@@ -63,10 +64,41 @@ const ProjectTimelineUl = styled.ul`
 	}
 `;
 
+const ProjectInfoDiv = styled.div`
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 10px;
+
+	& > img {
+		width: 16px;
+		height: 16px;
+	}
+
+	& > h3 {
+		font-size: 14px;
+		font-weight: 400;
+		font-style: normal;
+		width: 70px;
+	}
+
+	& > a {
+		font-size: 14px;
+		color: #258ddb;
+		font-weight: 400;
+	}
+
+	& > h4 {
+		font-size: 14px;
+		font-weight: 400;
+	}
+`;
+
 export {
 	ProjectIconDiv,
 	ProjectTimelineDiv,
 	ProjectTimelineInnerDiv,
 	ProjectTimelineImg,
 	ProjectTimelineUl,
+	ProjectInfoDiv,
 };
