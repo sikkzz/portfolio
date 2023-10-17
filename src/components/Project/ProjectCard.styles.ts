@@ -64,7 +64,9 @@ const ProjectTimelineUl = styled.ul`
 	}
 `;
 
-const ProjectInfoDiv = styled.div`
+const ProjectInfoDiv = styled.div``;
+
+const ProjectInfoInnerDiv = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 8px;
@@ -101,4 +103,5 @@ export {
 	ProjectTimelineImg,
 	ProjectTimelineUl,
 	ProjectInfoDiv,
+	ProjectInfoInnerDiv,
 };

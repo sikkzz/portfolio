@@ -37,6 +37,11 @@ const Project = () => {
 								date={project.date}
 								points={project.points}
 								img={project.img}
+								gitLink={project.gitLink}
+								url={project.url}
+								frontStack={project.frontStack}
+								backStack={project.backStack}
+								urlLink={project.urlLink}
 							/>
 						))}
 					</VerticalTimeline>

@@ -7,6 +7,7 @@ import {
 	ProjectTimelineImg,
 	ProjectTimelineUl,
 	ProjectInfoDiv,
+	ProjectInfoInnerDiv,
 } from "./ProjectCard.styles";
 
 import CheckIcon from "@/assets/check.png";
@@ -19,6 +20,11 @@ interface projectType {
 	date: string;
 	points: string[];
 	img: string;
+	gitLink: string;
+	url: string;
+	frontStack: string;
+	backStack: string;
+	urlLink: string;
 }
 
 const ProjectCard = ({
@@ -29,6 +35,11 @@ const ProjectCard = ({
 	date,
 	points,
 	img,
+	gitLink,
+	url,
+	frontStack,
+	backStack,
+	urlLink,
 }: projectType) => {
 	return (
 		<VerticalTimelineElement
@@ -55,28 +66,26 @@ const ProjectCard = ({
 				</ProjectTimelineUl>
 			</ProjectTimelineDiv>
 			<ProjectInfoDiv>
-				<img src={CheckIcon} alt="checkIcon" />
-				<h3>GitHub</h3>
-				<a href="https://github.com/sikkzz/publicculture">
-					https://github.com/sikkzz/publicculture
-				</a>
-			</ProjectInfoDiv>
-			<ProjectInfoDiv>
-				<img src={CheckIcon} alt="checkIcon" />
-				<h3>URL</h3>
-				<a href="https://www.youtube.com/watch?v=_FH2VWK8hCE">
-					https://www.youtube.com/v=_FH2VWK8hCE
-				</a>
-			</ProjectInfoDiv>
-			<ProjectInfoDiv>
-				<img src={CheckIcon} alt="checkIcon" />
-				<h3>Frontend</h3>
-				<h4>React, JavaScript, Redux</h4>
-			</ProjectInfoDiv>
-			<ProjectInfoDiv>
-				<img src={CheckIcon} alt="checkIcon" />
-				<h3>Backend</h3>
-				<h4>Node.js, mongoDB</h4>
+				<ProjectInfoInnerDiv>
+					<img src={CheckIcon} alt="checkIcon" />
+					<h3>GitHub</h3>
+					<a href={gitLink}>{gitLink}</a>
+				</ProjectInfoInnerDiv>
+				<ProjectInfoInnerDiv>
+					<img src={CheckIcon} alt="checkIcon" />
+					<h3>URL</h3>
+					<a href={urlLink}>{url}</a>
+				</ProjectInfoInnerDiv>
+				<ProjectInfoInnerDiv>
+					<img src={CheckIcon} alt="checkIcon" />
+					<h3>Frontend</h3>
+					<h4>{frontStack}</h4>
+				</ProjectInfoInnerDiv>
+				<ProjectInfoInnerDiv>
+					<img src={CheckIcon} alt="checkIcon" />
+					<h3>Backend</h3>
+					<h4>{backStack}</h4>
+				</ProjectInfoInnerDiv>
 			</ProjectInfoDiv>
 		</VerticalTimelineElement>
 	);
