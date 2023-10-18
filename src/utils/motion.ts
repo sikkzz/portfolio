@@ -45,6 +45,27 @@ export const fadeIn = ({ direction, type, delay, duration }: fadeInData) => {
 	};
 };
 
+export const slideIn = ({ direction, type, delay, duration }: fadeInData) => {
+	return {
+		hidden: {
+			// eslint-disable-next-line no-nested-ternary
+			x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
+			// eslint-disable-next-line no-nested-ternary
+			y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+		},
+		show: {
+			x: 0,
+			y: 0,
+			transition: {
+				type,
+				delay,
+				duration,
+				ease: "easeOut",
+			},
+		},
+	};
+};
+
 // export const staggerContainer = ({staggerChildren, delayChildren}: ) => {
 // 	return {
 // 		hidden: {},
